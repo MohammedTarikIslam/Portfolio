@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 body {
-  margin: 1rem;
+  margin: 1rem 5rem;
   background-color: map-get($background-colour, page);
   size: 100vh;
 }
@@ -54,4 +54,10 @@ body {
 
 .education {
   grid-column: span 2;
+}
+
+.education-desc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
+  flex-wrap: wrap;
 }
