@@ -32,6 +32,8 @@ header {
   background: transparent;
   backdrop-filter: blur(3px);
   margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 4rem;
 
   color: map-get($font-color, intro);
   font-weight: map-get($font-weight, intro);
@@ -40,10 +42,12 @@ header {
 
   @media (max-width: 480px) {
     font-size: 2rem;
+    padding: 1rem;
   }
 
   @media (min-width: 481px) and (max-width: 768px) {
     font-size: 3rem;
+    padding: 1rem;
   }
 }
 
